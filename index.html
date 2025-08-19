@@ -1,152 +1,212 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Formulario Único Nacional - Versión Segura</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="page">
-    <!-- Tabla para el logo de Minvivienda -->
-    <table class="logo-header">
+    <!-- ===== ENCABEZADO ===== -->
+    <table class="header-table">
         <tr>
-            <!-- Celda 1: Escudo de Colombia -->
-            <td class="logo-escudo">
-                <!-- Reemplaza esta URL con una URL pública del escudo -->
-                <img src="https://i.ibb.co/ZpnnH4Bw/img-escudo.jpg" alt="Escudo de Colombia" style="width: 60px; height: auto; vertical-align: middle;">
+            <td class="header-logo-cell">
+                <img src="https://i.ibb.co/g7QymRx/Encabezado-curaduria-right.png" alt="Logo" class="header-logo">               
+                &nbsp;
             </td>
-            <!-- Celda 2: Texto Principal -->
-            <td class="logo-texto-principal">
-                La vivienda y el agua<br>son de todos
+            <td class="header-title-cell">
+                LISTA DE VERIFICACIÓN Y/O VALIDACIÓN DOCUMENTAL DE SOLICITUD DE LICENCIAS URBANÍSTICAS Y OTRAS ACTUACIONES
             </td>
-            <!-- Celda 3: Minvivienda -->
-            <td class="logo-minvivienda">
-                Minvivienda
+            <td class="header-info-cell">
+                <table class="no-border header-info-table">
+                    <tr><td><strong>CÓDIGO:</strong> SGC – GAR – F - 001</td></tr>
+                    <tr><td><strong>VIG. DESDE:</strong> 02 – 08- 2023</td></tr>
+                    <tr><td><strong>VERSIÓN:</strong> 001</td></tr>
+                    <tr><td><strong>Pág.</strong> 1 de 1</td></tr>
+                </table>
             </td>
         </tr>
     </table>
+
+    <h3 class="section-title">INFORMACIÓN GENERAL</h3>
+    <table class="no-border info-table">
+        <tr>
+            <td><strong>Fecha de Recepción:</strong></td>
+            <td><<[Fecha_Recepcion]>></td>
+            <td><strong>Hora de Recepción:</strong></td>
+            <td><<[Hora_Recepcion]>></td>
+        </tr>
+        <tr>
+            <td><strong>Tipo de solicitud:</strong></td>
+            <td colspan="3"><<[Tipo_Solicitud]>></td>
+        </tr>
+        <tr>
+            <td><strong>Nombre del responsable:</strong></td>
+            <td colspan="3"><<[Nombre_Responsable]>></td>
+        </tr>
+        <tr>
+            <td><strong>Teléfono de contacto:</strong></td>
+            <td><<[Telefono]>></td>
+            <td><strong>Correo electrónico:</strong></td>
+            <td><<[Email]>></td>
+        </tr>
+    </table>
+
+    <h3 class="section-title">DOCUMENTOS COMUNES A TODA SOLICITUD</h3>
     <table>
-        <tr>
-            <td class="bold" style="width: 70%;">FORMULARIO ÚNICO NACIONAL</td>
-            <td class="bold text-right">Página 1</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Documento</th>
+                <th class="check-col">SI</th>
+                <th class="check-col">NO</th>
+                <th class="check-col">N/A</th>
+                <th>OBSERVACIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Certificado de tradición y libertad del inmueble</td>
+                <td class="check-col"><<[CTL_SI]>></td>
+                <td class="check-col"><<[CTL_NO]>></td>
+                <td class="check-col"><<[CTL_NA]>></td>
+                <td><<[CTL_Obs]>></td>
+            </tr>
+            <tr>
+                <td>FUN – Formulario Único Nacional diligenciado</td>
+                <td class="check-col"><<[FUN_SI]>></td>
+                <td class="check-col"><<[FUN_NO]>></td>
+                <td class="check-col"><<[FUN_NA]>></td>
+                <td><<[FUN_Obs]>></td>
+            </tr>
+            <tr>
+                <td>Copia del documento de identidad de solicitante</td>
+                <td class="check-col"><<[ID_SI]>></td>
+                <td class="check-col"><<[ID_NO]>></td>
+                <td class="check-col"><<[ID_NA]>></td>
+                <td><<[ID_Obs]>></td>
+            </tr>
+            <tr>
+                <td>Certificado de Cámara y Comercio</td>
+                <td class="check-col"><<[CC_SI]>></td>
+                <td class="check-col"><<[CC_NO]>></td>
+                <td class="check-col"><<[CC_NA]>></td>
+                <td><<[CC_Obs]>></td>
+            </tr>
+            <tr>
+                <td>RUT – Registro Único Tributario</td>
+                <td class="check-col"><<[RUT_SI]>></td>
+                <td class="check-col"><<[RUT_NO]>></td>
+                <td class="check-col"><<[RUT_NA]>></td>
+                <td><<[RUT_Obs]>></td>
+            </tr>
+            <tr>
+                <td>Poder especial en el caso de ser apoderado o mandatario</td>
+                <td class="check-col"><<[Poder_SI]>></td>
+                <td class="check-col"><<[Poder_NO]>></td>
+                <td class="check-col"><<[Poder_NA]>></td>
+                <td><<[Poder_Obs]>></td>
+            </tr>
+            <tr>
+                <td>Copia del Impuesto PREDIAL o identificación del predio</td>
+                <td class="check-col"><<[Predial_SI]>></td>
+                <td class="check-col"><<[Predial_NO]>></td>
+                <td class="check-col"><<[Predial_NA]>></td>
+                <td><<[Predial_Obs]>></td>
+            </tr>
+             <tr>
+                <td>Copia de la Matrícula Profesional de los profesionales</td>
+                <td class="check-col"><<[Matricula_SI]>></td>
+                <td class="check-col"><<[Matricula_NO]>></td>
+                <td class="check-col"><<[Matricula_NA]>></td>
+                <td><<[Matricula_Obs]>></td>
+            </tr>
+             <tr>
+                <td>Copia de certificaciones o constancias de experiencia</td>
+                <td class="check-col"><<[Cert_SI]>></td>
+                <td class="check-col"><<[Cert_NO]>></td>
+                <td class="check-col"><<[Cert_NA]>></td>
+                <td><<[Cert_Obs]>></td>
+            </tr>
+             <tr>
+                <td>Soporte de pago de cargo fijo</td>
+                <td class="check-col"><<[Pago_SI]>></td>
+                <td class="check-col"><<[Pago_NO]>></td>
+                <td class="check-col"><<[Pago_NA]>></td>
+                <td><<[Pago_Obs]>></td>
+            </tr>
+        </tbody>
     </table>
 
-
-    <div class="section-title">0. DATOS GENERALES</div>
-    <!-- Tabla para la sección 0. DATOS GENERALES -->
-<table>
-    <tr>
-        <!-- Celda de la izquierda que ocupa 3 filas -->
-        <td rowspan="3" style="width: 30%; vertical-align: middle;" class="small-text text-center">
-            USO EXCLUSIVO CURADORES URBANOS - OFICINA DE PLANEACIÓN O LA QUE HAGA SUS VECES
-        </td>
-        
-        <!-- Primera fila de la derecha -->
-        <td><span class="bold">0.1 OFICINA RESPONSABLE</span></td>
-    </tr>
-    <tr>
-        <!-- Segunda fila de la derecha -->
-        <td>
-            <span class="bold">0.2 No. DE RADICACIÓN</span>
-            <div class="radicacion-boxes">
-                
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <!-- Tercera fila de la derecha -->
-        <td><span class="bold">0.3 DEPARTAMENTO - MUNICIPIO - FECHA</span><div class="input-placeholder"></div></td>
-    </tr>
-</table>
-
-<!-- Párrafo de instrucciones -->
-<p class="small-text">Lea cuidadosamente este formulario y las instrucciones contenidas en la Guía anexa...</p>
-
-    <div class="section-title">1. IDENTIFICACIÓN DE LA SOLICITUD</div>
+    <h3 class="section-title">DOCUMENTOS ADICIONALES</h3>
     <table>
-        <tr>
-            <td style="width: 50%;"><span class="bold">1.1 TIPO DE TRÁMITE</span></td>
-            <td><span class="bold">1.2 OBJETO DEL TRÁMITE</span></td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> A. LICENCIA DE URBANIZACIÓN</td>
-            <td><span class="checkbox"></span> INICIAL</td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> B. LICENCIA DE PARCELACIÓN</td>
-            <td><span class="checkbox"></span> MODIFICACIÓN DE LICENCIA VIGENTE</td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> C. LICENCIA DE SUBDIVISIÓN</td>
-            <td><span class="checkbox"></span> REVALIDACIÓN</td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> D. LICENCIA DE CONSTRUCCIÓN</td>
-            <td rowspan="4"><span class="bold">OTRAS ACTUACIONES</span><br>¿Cuál? <div class="input-placeholder"></div></td>
-        </tr>
-        <tr><td><span class="checkbox"></span> E. INTERVENCIÓN Y OCUPACIÓN DEL ESPACIO PÚBLICO</td></tr>
-        <tr><td><span class="checkbox"></span> F. RECONOCIMIENTO DE LA EXISTENCIA DE UNA EDIFICACIÓN</td></tr>
-        <tr><td><span class="checkbox"></span> G. OTRAS ACTUACIONES</td></tr>
+        <thead>
+            <tr>
+                <th>Documento</th>
+                <th class="check-col">SI</th>
+                <th class="check-col">NO</th>
+                <th class="check-col">N/A</th>
+                <th>OBSERVACIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Planos arquitectónicos del proyecto</td>
+                <td class="check-col"><<[PlanoArq_SI]>></td>
+                <td class="check-col"><<[PlanoArq_NO]>></td>
+                <td class="check-col"><<[PlanoArq_NA]>></td>
+                <td><<[PlanoArq_Obs]>></td>
+            </tr>
+            <tr>
+                <td>Planos estructurales del proyecto</td>
+                <td class="check-col"><<[PlanoEst_SI]>></td>
+                <td class="check-col"><<[PlanoEst_NO]>></td>
+                <td class="check-col"><<[PlanoEst_NA]>></td>
+                <td><<[PlanoEst_Obs]>></td>
+            </tr>
+            <tr>
+                <td>Plano topográfico del proyecto</td>
+                <td class="check-col"><<[PlanoTop_SI]>></td>
+                <td class="check-col"><<[PlanoTop_NO]>></td>
+                <td class="check-col"><<[PlanoTop_NA]>></td>
+                <td><<[PlanoTop_Obs]>></td>
+            </tr>
+            <tr>
+                <td>Memoria de cálculo y diseños estructurales</td>
+                <td class="check-col"><<[MemoriaCalc_SI]>></td>
+                <td class="check-col"><<[MemoriaCalc_NO]>></td>
+                <td class="check-col"><<[MemoriaCalc_NA]>></td>
+                <td><<[MemoriaCalc_Obs]>></td>
+            </tr>
+             <tr>
+                <td>Estudios geotécnicos y de suelos</td>
+                <td class="check-col"><<[EstudioSuelos_SI]>></td>
+                <td class="check-col"><<[EstudioSuelos_NO]>></td>
+                <td class="check-col"><<[EstudioSuelos_NA]>></td>
+                <td><<[EstudioSuelos_Obs]>></td>
+            </tr>
+        </tbody>
     </table>
 
-    <table>
-        <tr><th colspan="2">1.5 MODALIDAD LICENCIA DE CONSTRUCCIÓN</th><th>1.6 USOS</th></tr>
+    <h3 class="section-title">OBSERVACIONES GENERALES</h3>
+    <div class="observations-box">
+        <<[Observaciones_Generales]>>
+    </div>
+
+    <table class="no-border signatures-table">
         <tr>
-            <td><span class="checkbox"></span> a. OBRA NUEVA</td>
-            <td><span class="checkbox"></span> f. REFORZAMIENTO ESTRUCTURAL</td>
-            <td><span class="checkbox"></span> Vivienda</td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> b. AMPLIACIÓN</td>
-            <td><span class="checkbox"></span> g. DEMOLICIÓN <span class="checkbox"></span> TOTAL <span class="checkbox"></span> PARCIAL</td>
-            <td><span class="checkbox"></span> Comercio y/o servicios</td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> c. ADECUACIÓN</td>
-            <td><span class="checkbox"></span> h. RECONSTRUCCIÓN</td>
-            <td><span class="checkbox"></span> Institucional / Dotacional</td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> d. MODIFICACIÓN</td>
-            <td><span class="checkbox"></span> i. CERRAMIENTO</td>
-            <td><span class="checkbox"></span> Industrial</td>
-        </tr>
-        <tr>
-            <td><span class="checkbox"></span> e. RESTAURACIÓN</td>
-            <td></td>
-            <td>Otro, ¿Cuál? <div class="input-placeholder"></div></td>
-        </tr>
-    </table>
-    
-    <div class="section-title">2. INFORMACIÓN SOBRE EL PREDIO</div>
-     <table>
-        <tr>
-            <td><span class="bold">2.1 DIRECCIÓN O NOMENCLATURA ACTUAL</span><div class="input-placeholder"></div></td>
-            <td><span class="bold">ANTERIOR(ES)</span><div class="input-placeholder"></div></td>
-        </tr>
-        <tr>
-            <td><span class="bold">2.2 No. MATRÍCULA INMOBILIARIA</span><div class="input-placeholder"></div></td>
-            <td><span class="bold">2.3 No. IDENTIFICACIÓN CATASTRAL</span><div class="input-placeholder"></div></td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td style="width: 50%;">
-                <span class="bold">2.4 CLASIFICACIÓN DEL SUELO</span><br>
-                <span class="checkbox"></span> a. URBANO<br>
-                <span class="checkbox"></span> b. RURAL<br>
-                <span class="checkbox"></span> c. DE EXPANSIÓN
+            <td class="signature-cell signature-cell-left">
+                <div class="signature-box">
+                    <strong>Responsable de Recepción Documental</strong><br>
+                    CURADOR URBANO 1
+                </div>
             </td>
-            <td>
-                <span class="bold">2.5 PLANIMETRÍA DEL LOTE</span><br>
-                <span class="checkbox"></span> a. Plano del Loteo<br>
-                <span class="checkbox"></span> b. Plano Topográfico<br>
-                <span class="checkbox"></span> c. Otro ¿Cuál? <div class="input-placeholder"></div>
+            <td class="signature-cell signature-cell-right">
+                <div class="signature-box">
+                    <strong>Responsable de Entrega de Documentos</strong><br>
+                    Para solicitud de Licencia Urbanística
+                </div>
             </td>
         </tr>
     </table>
-</div>
+
 </body>
 </html>
