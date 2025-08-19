@@ -1,0 +1,60 @@
+body { font-family: Arial, sans-serif; font-size: 8pt; line-height: 1.2; }
+        .page { width: 100%; page-break-after: always; }
+        .text-right { text-align: right; }
+        table { width: 100%; border-collapse: collapse; margin: 5px 0; }
+        th, td { border: 1px solid #000; padding: 3px 5px; text-align: left; vertical-align: top; }
+        th { background-color: #E0E0E0; font-weight: bold; }
+        .section-title { background-color: #3399FF; font-weight: bold; padding: 4px; border: 1px solid #000; margin-top: 10px; }
+        .header-table td { border: none; }
+        .header-main-title { font-size: 14pt; font-weight: bold; text-align: center; }
+        .input-placeholder { border-bottom: 1px solid #000; height: 14px; }
+        .checkbox { display: inline-block; width: 12px; height: 12px; border: 1px solid #000; margin-right: 5px; vertical-align: middle; }
+        .bold { font-weight: bold; }
+        .small-text { font-size: 7pt; }
+        .signature-box { height: 40px; }
+        .text-center { text-align: center; }
+        .logo-header {
+            border-collapse: collapse;
+            width: auto; /* La tabla se ajustará al contenido */
+            margin-left: auto; /* Esto alinea la tabla a la derecha */
+            margin-right: 0;
+            border: none;
+        }
+
+        .logo-header td {
+            padding: 10px 15px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            border: none;
+        }
+
+        .logo-escudo {
+            background-color: #ffffff; /* Color de fondo gris-azulado claro */
+        }
+
+        .logo-texto-principal {
+            background-color: #005CB9; /* Azul oscuro institucional */
+            font-size: 10pt;
+        }
+
+        .logo-minvivienda {
+            background-color: #3399FF; /* Azul más claro */
+            font-size: 10pt;
+        }
+
+        .radicacion-boxes {
+            display: flex; /* Usa flexbox para alinear las casillas en una línea */
+            margin-top: 4px;
+        }
+        .rad-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            text-align: center;
+            line-height: 20px; /* Centra el texto verticalmente */
+            margin-right: 3px;
+            font-weight: bold;
+        }

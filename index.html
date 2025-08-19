@@ -1,90 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Único Nacional - Versión Segura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>REMISIÓN</title>
-		<link rel="stylesheet" href="https://fredyortegon30.github.io/invoice/style.css">
-		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
-	</head>
-	<body>
-		<header>
-			<h1>REMISIÓN</h1>
-			<address>
-				<p>MI EMPRESA</p>
-				<p>NIT 1111111111<br>Calle 11- 10-33</p>
-				<p>Pereira</p>
-			</address>
+<div class="page">
+    <!-- Tabla para el logo de Minvivienda -->
+    <table class="logo-header">
+        <tr>
+            <!-- Celda 1: Escudo de Colombia -->
+            <td class="logo-escudo">
+                <!-- Reemplaza esta URL con una URL pública del escudo -->
+                <img src="https://i.ibb.co/ZpnnH4Bw/img-escudo.jpg" alt="Escudo de Colombia" style="width: 60px; height: auto; vertical-align: middle;">
+            </td>
+            <!-- Celda 2: Texto Principal -->
+            <td class="logo-texto-principal">
+                La vivienda y el agua<br>son de todos
+            </td>
+            <!-- Celda 3: Minvivienda -->
+            <td class="logo-minvivienda">
+                Minvivienda
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td class="bold" style="width: 70%;">FORMULARIO ÚNICO NACIONAL</td>
+            <td class="bold text-right">Página 1</td>
+        </tr>
+    </table>
 
-<div style="float: right;">
-    <img alt="" src="https://acortar.link/caSNRS" style="width: 100px; height: 100px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title="">
+
+    <div class="section-title">0. DATOS GENERALES</div>
+    <!-- Tabla para la sección 0. DATOS GENERALES -->
+<table>
+    <tr>
+        <!-- Celda de la izquierda que ocupa 3 filas -->
+        <td rowspan="3" style="width: 30%; vertical-align: middle;" class="small-text text-center">
+            USO EXCLUSIVO CURADORES URBANOS - OFICINA DE PLANEACIÓN O LA QUE HAGA SUS VECES
+        </td>
+        
+        <!-- Primera fila de la derecha -->
+        <td><span class="bold">0.1 OFICINA RESPONSABLE</span></td>
+    </tr>
+    <tr>
+        <!-- Segunda fila de la derecha -->
+        <td>
+            <span class="bold">0.2 No. DE RADICACIÓN</span>
+            <div class="radicacion-boxes">
+                
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <!-- Tercera fila de la derecha -->
+        <td><span class="bold">0.3 DEPARTAMENTO - MUNICIPIO - FECHA</span><div class="input-placeholder"></div></td>
+    </tr>
+</table>
+
+<!-- Párrafo de instrucciones -->
+<p class="small-text">Lea cuidadosamente este formulario y las instrucciones contenidas en la Guía anexa...</p>
+
+    <div class="section-title">1. IDENTIFICACIÓN DE LA SOLICITUD</div>
+    <table>
+        <tr>
+            <td style="width: 50%;"><span class="bold">1.1 TIPO DE TRÁMITE</span></td>
+            <td><span class="bold">1.2 OBJETO DEL TRÁMITE</span></td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> A. LICENCIA DE URBANIZACIÓN</td>
+            <td><span class="checkbox"></span> INICIAL</td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> B. LICENCIA DE PARCELACIÓN</td>
+            <td><span class="checkbox"></span> MODIFICACIÓN DE LICENCIA VIGENTE</td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> C. LICENCIA DE SUBDIVISIÓN</td>
+            <td><span class="checkbox"></span> REVALIDACIÓN</td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> D. LICENCIA DE CONSTRUCCIÓN</td>
+            <td rowspan="4"><span class="bold">OTRAS ACTUACIONES</span><br>¿Cuál? <div class="input-placeholder"></div></td>
+        </tr>
+        <tr><td><span class="checkbox"></span> E. INTERVENCIÓN Y OCUPACIÓN DEL ESPACIO PÚBLICO</td></tr>
+        <tr><td><span class="checkbox"></span> F. RECONOCIMIENTO DE LA EXISTENCIA DE UNA EDIFICACIÓN</td></tr>
+        <tr><td><span class="checkbox"></span> G. OTRAS ACTUACIONES</td></tr>
+    </table>
+
+    <table>
+        <tr><th colspan="2">1.5 MODALIDAD LICENCIA DE CONSTRUCCIÓN</th><th>1.6 USOS</th></tr>
+        <tr>
+            <td><span class="checkbox"></span> a. OBRA NUEVA</td>
+            <td><span class="checkbox"></span> f. REFORZAMIENTO ESTRUCTURAL</td>
+            <td><span class="checkbox"></span> Vivienda</td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> b. AMPLIACIÓN</td>
+            <td><span class="checkbox"></span> g. DEMOLICIÓN <span class="checkbox"></span> TOTAL <span class="checkbox"></span> PARCIAL</td>
+            <td><span class="checkbox"></span> Comercio y/o servicios</td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> c. ADECUACIÓN</td>
+            <td><span class="checkbox"></span> h. RECONSTRUCCIÓN</td>
+            <td><span class="checkbox"></span> Institucional / Dotacional</td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> d. MODIFICACIÓN</td>
+            <td><span class="checkbox"></span> i. CERRAMIENTO</td>
+            <td><span class="checkbox"></span> Industrial</td>
+        </tr>
+        <tr>
+            <td><span class="checkbox"></span> e. RESTAURACIÓN</td>
+            <td></td>
+            <td>Otro, ¿Cuál? <div class="input-placeholder"></div></td>
+        </tr>
+    </table>
+    
+    <div class="section-title">2. INFORMACIÓN SOBRE EL PREDIO</div>
+     <table>
+        <tr>
+            <td><span class="bold">2.1 DIRECCIÓN O NOMENCLATURA ACTUAL</span><div class="input-placeholder"></div></td>
+            <td><span class="bold">ANTERIOR(ES)</span><div class="input-placeholder"></div></td>
+        </tr>
+        <tr>
+            <td><span class="bold">2.2 No. MATRÍCULA INMOBILIARIA</span><div class="input-placeholder"></div></td>
+            <td><span class="bold">2.3 No. IDENTIFICACIÓN CATASTRAL</span><div class="input-placeholder"></div></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td style="width: 50%;">
+                <span class="bold">2.4 CLASIFICACIÓN DEL SUELO</span><br>
+                <span class="checkbox"></span> a. URBANO<br>
+                <span class="checkbox"></span> b. RURAL<br>
+                <span class="checkbox"></span> c. DE EXPANSIÓN
+            </td>
+            <td>
+                <span class="bold">2.5 PLANIMETRÍA DEL LOTE</span><br>
+                <span class="checkbox"></span> a. Plano del Loteo<br>
+                <span class="checkbox"></span> b. Plano Topográfico<br>
+                <span class="checkbox"></span> c. Otro ¿Cuál? <div class="input-placeholder"></div>
+            </td>
+        </tr>
+    </table>
 </div>
-
-
-		</header>
-		<article>
-			<h1>Recipient</h1>
-			<address>
-				<p>&lt;&lt;[id_cliente].[Nombre_cliente]&gt;&gt;<br>-</p>
-                <p class="small-text"><br>Email: &lt;&lt;[id_cliente].[Email]&gt;&gt;</p>
-                <p class="small-text">Cel:&lt;&lt;[id_cliente].[Celular]&gt;&gt;</p>
-			</address>
-			<table class="meta">
-				<tr>
-					<th><span>Remisión #</span></th>
-					<td><span>&lt;&lt;[N_factura]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Fecha</span></th>
-					<td><span>&lt;&lt;[Fecha]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-			</table>
-			<table class="inventory">
-				<thead>
-					<tr>
-						<th><span>Producto</span></th>
-						<th><span>Descripcion</span></th>
-						<th><span>Valor ud</span></th>
-						<th><span>Cantidad</span></th>
-						<th><span>Subtotal</span></th>
-					</tr>
-				</thead>
-				<tbody>
-				<p><span>&lt;&lt;Start: SELECT(DETALLE_VENTAS[id_detalle],[id_encabezado_venta]=[id_encabezado]) &gt;&gt;</span></p>
-					<tr>
-						<td><a class="cut">-</a>&lt;&lt;[id_producto].[Nombre de producto]&gt;&gt;</td>
-						<td><span></span></td>
-				        <td><span>&lt;&lt;[Valor_unitario]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[Cantidad]&gt;&gt;</span></td>
-						<td><span>&lt;&lt;[Subtotal]&gt;&gt;</span></td>
-					</tr>
-				<p><span>&lt;&lt; end &gt;&gt;</span></p>
-				</tbody>
-			</table>
-			<a class="add">+</a>
-			<table class="balance">
-				<tr>
-					<th><span>Total</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-				<tr>
-					<th><span>Otros conceptos</span></th>
-					<td><span data-prefix="$"></span><span>0.00</span></td>
-				</tr>
-				<tr>
-					<th><span>Total a pagar</span></th>
-					<td><span>&lt;&lt;[TOTAL VENTA]&gt;&gt;</span></td>
-				</tr>
-			</table>
-		</article>
-		<aside>
-			<h1><span>Notas adicionales</span></h1>
-			<div>
-				<p>Pagos a la cuenta de ahorros bancolombia # </p>
-			</div>
-		</aside>
-	</body>
+</body>
 </html>
