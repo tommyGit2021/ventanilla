@@ -14,7 +14,8 @@
         vertical-align: top;
     }
     th {
-        background-color: #f2f2f2;
+        background-color: #284862;
+        color: white;
         font-weight: bold;
     }
     .check-col {
@@ -22,7 +23,8 @@
         text-align: center;
     }
     .section-title {
-        background-color: #e0e0e0;
+        background-color: #284862;
+        color: white;
         font-weight: bold;
         text-align: center;
         padding: 8px;
@@ -30,7 +32,7 @@
         margin-top: 15px;
     }
     .no-border, .no-border td {
-        border: none;
+        border: 1px solid #333;
     }
 
     /* --- ESTILOS DEL ENCABEZADO --- */
@@ -44,7 +46,7 @@
         vertical-align: middle;
     }
     .header-logo {
-    max-width: 250px;
+    max-width: 260px;
     max-height: 200px;
     height: auto;
     width: auto;
